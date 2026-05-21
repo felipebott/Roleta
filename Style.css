@@ -1,0 +1,210 @@
+/* --- ESTILO URBAN BARBER GLOW --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: radial-gradient(circle at center, #1c1c1c 0%, #060606 100%);
+}
+
+.barber-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+}
+
+/* --- HEADERS --- */
+.barber-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.barber-header .tagline {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    padding: 2px 12px;
+    border-radius: 20px;
+}
+
+.barber-header h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-top: 12px;
+}
+
+.barber-header .subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    color: #777;
+    margin-top: 4px;
+}
+
+/* --- ENGENHARIA DA ROLETA --- */
+.wheel-box {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    margin-bottom: 35px;
+}
+
+/* Ponteiro Fixo Superior */
+.barber-pointer {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 26px solid #d4af37;
+    z-index: 99;
+    filter: drop-shadow(0 0 6px rgba(212,175,55,0.7));
+}
+
+.wheel-outer-ring {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 6px;
+    background: #141414;
+    border: 2px solid #1a1a1a;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.8);
+}
+
+/* O elemento SVG que roda */
+.wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    transition: transform 5s cubic-bezier(0.15, 0.88, 0.3, 1);
+}
+
+/* Ajustes de Tipografia Interna do SVG */
+svg text {
+    font-size: 8px;
+    font-weight: 700;
+    fill: #999999;
+    text-anchor: middle;
+    letter-spacing: 0.5px;
+}
+
+svg text.text-gold {
+    fill: #d4af37 !important;
+    font-weight: 900;
+}
+
+/* Hub/Miolo central */
+.wheel-hub {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    background: #0d0d0d;
+    border: 3px solid #d4af37;
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+/* --- BOTÃO --- */
+.action-btn {
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    padding: 15px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.action-btn:hover {
+    background: #d4af37;
+    color: #000;
+    box-shadow: 0 0 15px rgba(212,175,55,0.3);
+}
+
+.action-btn:disabled {
+    border-color: #222;
+    color: #444;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* --- MODAL --- */
+.barber-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.93);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(4px);
+}
+
+.modal-card {
+    background: #111;
+    border: 1px solid #d4af37;
+    padding: 40px 30px;
+    text-align: center;
+    width: 85%;
+    max-width: 360px;
+}
+
+.modal-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.modal-card h2 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.modal-card p {
+    font-size: 0.95rem;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+.modal-btn {
+    background: #d4af37;
+    color: #000;
+    border: none;
+    padding: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    width: 100%;
+}
