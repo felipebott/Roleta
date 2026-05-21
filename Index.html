@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabelo Barbearia - Club da Fortuna</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="barber-layout">
+        <header class="barber-header">
+            <span class="tagline">PREMIUM CLUB</span>
+            <h1>RABELO BARBERARIA<h1>
+
+            <h2>TESTE SUA SORTE AQUI</h2></h1>
+            <p class="subtitle">GASTE R$100 OU PAGUE R$5 E GIRE A FORTUNA</p>
+        </header>
+
+        <div class="wheel-box">
+            <div class="barber-pointer"></div>
+            
+            <div class="wheel-outer-ring">
+                <svg class="wheel" id="wheel" viewBox="0 0 400 400">
+                    <defs>
+                        <path id="fatia-shape" d="M200,200 L200,10 A190,190 0 0,1 295,35 Z" />
+                    </defs>
+                    
+                    <g transform="rotate(-15, 200, 200)">
+                        <g transform="rotate(0, 200, 200)">
+                            <path d="M200,200 L200,10 A190,190 0 0,1 295,35 Z" fill="#111111" stroke="#d4af37" stroke-width="1"/>
+                            <text x="200" y="70" transform="rotate(15, 200, 200)" class="text-gold">CORTE GRÁTIS</text>
+                        </g>
+                        <g transform="rotate(30, 200, 200)">
+                            <path d="M200,200 L200,10 A190,190 0 0,1 295,35 Z" fill="#1c1c1c" stroke="rgba(212,175,55,0.1)"/>
+                            <text x="200" y="70" transform="rotate(15, 200, 200)">NÃO FOI</text>
+                            <text x="200" y="85" transform="rotate(15, 200, 200)">DESSA VEZ</text>
+                        </g>
+                        <g transform="rotate(60, 200, 200)">
+                            <path d="M200,200 L200,10 A190,190 0 0,1 295,35 Z" fill="#252525" stroke="rgba(212,175,55,0.1)"/>
+                            <text x="200" y="70" transform="rotate(15, 200, 200)">10% DESC.</text>
+                            <text x="200" y="85" transform="rotate(15, 200, 200)">BARBA</text>
+                        </g>
+                        <g transform="rotate(90, 200, 200)">
+                            <path d="M200,200 L200,10 A190,190 0 0,1 295,35 Z" fill="#1c1c1c" stroke="rgba(212,175,55,0.1)"/>
+                            <text x="200" y="70" transform="rotate(15, 200, 200)">NÃO FOI</text>
+                            <text x="200" y="85" transform="rotate(15, 200, 200)">DESSA VEZ</text>
+                        </g>
+                        <g transform="rotate(120, 200, 200)">
+                            <path d="M200,200 L200,10 A190,190 0 0,1 295,35 Z" fill="#252525" stroke="rgba(212,175,55,0.1)"/>
+                            <text x="200" y="70" transform="rotate(15, 200, 200)">5% DESC.</text>
+                            <text x="200" y="85" transform="rotate(15, 200, 200)">SOBRANC.</text>
+                        </g>
+                        <g transform="rotate(150, 200, 200)">
+                            <path d="M200,200 L200,10 A190,190 0 0,1 295,35 Z" fill="#1c1c1c" stroke="rgba(212,175,55,0.1)"/>
+                            <text x="200" y="70" transform="rotate(15, 200, 200)">NÃO FOI</text>
+                            <text x="200" y="85" transform="rotate(15, 200, 200)">DESSA VEZ</text>
+                        </g>
+                        <g transform="rotate(180, 200, 200)">
+                            <path d="M200,200 L200,10 A190,190 0 0,1 295,35 Z" fill="#252525" stroke="rgba(212,175,55,0.1)"/>
+                            <text x="200" y="70" transform="rotate(15, 200, 200)">10% CABELO</text>
+                            <text x="200" y="85" transform="rotate(15, 200, 200)">& BARBA</text>
+                        </g>
+                        <g transform="rotate(210, 200, 200)">
+                            <path d="M200,200 L200,10 A190,190 0 0,1 295,35 Z" fill="#1c1c1c" stroke="rgba(212,175,55,0.1)"/>
+                            <text x="200" y="70" transform="rotate(15, 200, 200)">NÃO FOI</text>
+                            <text x="200" y="85" transform="rotate(15, 200, 200)">DESSA VEZ</text>
+                        </g>
+                        <g transform="rotate(240, 200, 200)">
+                            <path d="M200,200 L200,10 A190,190 0 0,1 295,35 Z" fill="#252525" stroke="rgba(212,175,55,0.1)"/>
+                            <text x="200" y="70" transform="rotate(15, 200, 200)">10% DESC.</text>
+                            <text x="200" y="85" transform="rotate(15, 200, 200)">BARBA</text>
+                        </g>
+                        <g transform="rotate(270, 200, 200)">
+                            <path d="M200,200 L200,10 A190,190 0 0,1 295,35 Z" fill="#1c1c1c" stroke="rgba(212,175,55,0.1)"/>
+                            <text x="200" y="70" transform="rotate(15, 200, 200)">NÃO FOI</text>
+                            <text x="200" y="85" transform="rotate(15, 200, 200)">DESSA VEZ</text>
+                        </g>
+                        <g transform="rotate(300, 200, 200)">
+                            <path d="M200,200 L200,10 A190,190 0 0,1 295,35 Z" fill="#252525" stroke="rgba(212,175,55,0.1)"/>
+                            <text x="200" y="70" transform="rotate(15, 200, 200)">5% DESC.</text>
+                            <text x="200" y="85" transform="rotate(15, 200, 200)">SOBRANC.</text>
+                        </g>
+                        <g transform="rotate(330, 200, 200)">
+                            <path d="M200,200 L200,10 A190,190 0 0,1 295,35 Z" fill="#1c1c1c" stroke="rgba(212,175,55,0.1)"/>
+                            <text x="200" y="70" transform="rotate(15, 200, 200)">NÃO FOI</text>
+                            <text x="200" y="85" transform="rotate(15, 200, 200)">DESSA VEZ</text>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="wheel-hub"></div>
+        </div>
+
+        <button class="action-btn" id="spinBtn" onclick="actionSpin()">DISPARAR GIRO</button>
+    </div>
+
+    <div class="barber-modal" id="resultModal">
+        <div class="modal-card">
+            <div class="modal-icon">🎯</div>
+            <h2 id="modalTitle">STATUS</h2>
+            <p id="prizeText">PRÊMIO</p>
+            <button class="modal-btn" onclick="closeBarberModal()">RESGATAR</button>
+        </div>
+    </div>
+
+    <script>
+        const wheel = document.getElementById('wheel');
+        const spinBtn = document.getElementById('spinBtn');
+        const modal = document.getElementById('resultModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const prizeText = document.getElementById('prizeText');
+
+        // Mapeamento absoluto de ângulos para travar no ponteiro superior (0 graus)
+        const listaDePremios = [
+            { nome: "Corte Grátis", fatias: [0] },
+            { nome: "Não foi dessa vez", fatias: [1, 3, 5, 7, 9, 11] },
+            { nome: "10% de desconto na Barba", fatias: [2, 8] },
+            { nome: "5% de desconto na Sobrancelha", fatias: [4, 10] },
+            { nome: "10% de desconto em Cabelo e Barba", fatias: [6] }
+        ];
+
+        let grausAcumulados = 0;
+
+        function actionSpin() {
+            spinBtn.disabled = true;
+
+            const randomizer = Math.random() * 100;
+            let sorteado = "";
+
+            if (randomizer < 60) {
+                sorteado = "Não foi dessa vez";
+            } else if (randomizer < 80) {
+                sorteado = "5% de desconto na Sobrancelha";
+            } else if (randomizer < 93) {
+                sorteado = "10% de desconto na Barba";
+            } else if (randomizer < 99) {
+                sorteado = "10% de desconto em Cabelo e Barba";
+            } else {
+                sorteado = "Corte Grátis";
+            }
+
+            const alvo = listaDePremios.find(p => p.nome === sorteado);
+            const fatiaIndex = alvo.fatias[Math.floor(Math.random() * alvo.fatias.length)];
+
+            // Cálculo perfeito baseado em SVG (passos exatos de 30º para 12 fatias)
+            const grausPorFatia = 30;
+            const voltasExtras = 6 * 360;
+            
+            // Compensa a física horária direto na rotação do container SVG
+            const anguloDestinoAbsoluto = (360 - (fatiaIndex * grausPorFatia)) % 360;
+
+            grausAcumulados = (Math.ceil(grausAcumulados / 360) * 360) + voltasExtras + anguloDestinoAbsoluto;
+
+            wheel.style.transform = `rotate(${grausAcumulados}deg)`;
+
+            setTimeout(() => {
+                if (sorteado === "Não foi dessa vez") {
+                    modalTitle.innerText = "NÃO FOI DESTA VEZ";
+                    prizeText.innerText = "Fique tranquilo! Mais sorte na sua próxima visita.";
+                } else {
+                    modalTitle.innerText = "PARABÉNS! 🎉";
+                    prizeText.innerText = `Você ganhou: ${sorteado.toUpperCase()}`;
+                }
+                modal.style.display = "flex";
+            }, 5000);
+        }
+
+        function closeBarberModal() {
+            modal.style.display = "none";
+            spinBtn.disabled = false;
+        }
+    </script>
+</body>
+</html>
